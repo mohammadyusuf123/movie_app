@@ -8,7 +8,7 @@ type props = {
 }
 const SearchBar = ({onPress,placeholder }:props) => {
   return (
-    <View className='flex-row items-center bg-200  px-5 py-4 rounded-full border border-gray-300'>
+    <View className='flex-row items-center bg-200  px-5 py-4 rounded-full'>
       <Image source={icons.search} className='size-5'  resizeMode='contain' tintColor={'#ab8bff'}/>
       <TextInput
       onPress={() => onPress()}
