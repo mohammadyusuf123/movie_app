@@ -12,7 +12,7 @@ const MovieCard = ({id,title,poster_path,vote_average,release_date}:Movie) => {
             }} className="w-full h-52 rounded-lg" 
             resizeMode="cover"
             />
-            <Text className="text-white font-bold">{title}</Text>
+            <Text className="text-white font-bold" numberOfLines={1}>{title}</Text>
             <View className="flex-row items-center justify-start gap-x-1">
                 <Image source={icons.star} className="w-4 h-4" />
                 <Text className="text-white">{Math.round(vote_average/2)}</Text>
