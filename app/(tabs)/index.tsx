@@ -24,6 +24,8 @@ export default function Index() {
           <Image source={icons.logo} className="w-12 h-10 mt-20 mb-5 mx-auto" />
           <SearchBar
           placeholder="Search for a movie or TV show"
+          value=""
+          onChangeText={(text) => console.log(text)}
           onPress={() => router.push("/search")}
           />
         
